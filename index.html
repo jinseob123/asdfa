@@ -1,45 +1,110 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website</title>
-    <style>
-        body {
-            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-            text-align: left;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 20px;
-            font-size: 24px;
-        }
-        section {
-            margin: 20px auto;
-            padding: 20px;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            max-width: 800px;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="KIM JINSEOB, security engineering student and developer.">
+  <title>KIM JINSEOB | Security Engineering</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>Homepage</header>
-    <section>
-        <h2>Hello! I am KIM JINSEOB.</h2>
-        <p>I am currently studying at Kwangwoon University</p> 
-         
-        <ul>my areas of interest are:
-            <li>Cryptology</li>
-            <li>Cryptanalysis</li>
-            <li>Cyber Security</li>
-        </ul>
-        <p></p>
+  <header class="site-header">
+    <nav class="container nav" aria-label="Primary navigation">
+      <a class="wordmark" href="#top" aria-label="KIM JINSEOB, home">KJ<span aria-hidden="true">.</span></a>
+      <div class="nav-links">
+        <a href="#about">About</a><a href="#projects">Projects</a>
+        <a href="#research">Research</a><a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top" class="container">
+    <section class="hero" aria-labelledby="hero-title">
+      <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Security Engineering Student</p>
+      <h1 id="hero-title">KIM JINSEOB</h1>
+      <p class="hero-intro">Security engineering student interested in web security, infrastructure security, AI-based threat detection, and lightweight authentication protocols.</p>
+      <div class="actions" aria-label="Profile links">
+        <a class="button button-primary" href="#">GitHub <span aria-hidden="true">&nearr;</span></a>
+        <a class="button" href="mailto:your-email@example.com">Email</a>
+        <a class="button" href="#">Resume</a>
+      </div>
     </section>
+
+    <section id="about" class="section" aria-labelledby="about-title">
+      <div class="section-heading"><p class="section-index">01</p><h2 id="about-title">About</h2></div>
+      <div class="section-content prose"><p>I am interested in building practical security systems, analyzing logs, designing detection pipelines, and studying authentication and security protocols. I enjoy connecting research ideas with systems that can be tested, measured, and improved.</p></div>
+    </section>
+
+    <section id="projects" class="section" aria-labelledby="projects-title">
+      <div class="section-heading"><p class="section-index">02</p><h2 id="projects-title">Selected Projects</h2></div>
+      <div class="section-content project-list">
+        <article class="project-card">
+          <div class="project-number" aria-hidden="true">01</div>
+          <div>
+            <h3>AI-Based Real-Time Security Threat Detection System</h3>
+            <p>A real-time web security monitoring architecture that collects WAF/Nginx logs, streams them through Fluent Bit and Kafka, analyzes threats with an AI server, stores results in MySQL, and visualizes them through a React dashboard.</p>
+            <ul class="tags" aria-label="Technologies"><li>WAF/Nginx</li><li>ModSecurity CRS</li><li>Fluent Bit</li><li>Kafka</li><li>FastAPI</li><li>LightGBM</li><li>Spring Boot</li><li>MySQL</li><li>React</li></ul>
+            <div class="text-links"><a href="#">GitHub &nearr;</a><a href="#">Report &nearr;</a><a href="#">Demo &nearr;</a></div>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-number" aria-hidden="true">02</div>
+          <div>
+            <h3>Post-Quantum Lightweight Authentication Protocol</h3>
+            <p>A lightweight authentication and key exchange protocol for smart home environments, designed with post-quantum security considerations and efficient communication overhead.</p>
+            <ul class="tags" aria-label="Technologies"><li>Cryptography</li><li>Authentication Protocol</li><li>ML-KEM/Kyber</li><li>Hash-based DRBG</li><li>ProVerif</li></ul>
+            <div class="text-links"><a href="#">Paper &nearr;</a><a href="#">GitHub &nearr;</a></div>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-number" aria-hidden="true">03</div>
+          <div>
+            <h3>CISC-S Paper &amp; Poster Presentation</h3>
+            <p>A research project analyzing the usefulness and security risks of AI agents in CLI environments under different OS privilege levels.</p>
+            <ul class="tags" aria-label="Technologies"><li>AI Security</li><li>CLI Agent</li><li>OS Privilege</li><li>Security Analysis</li></ul>
+            <div class="text-links"><a href="#">Paper &nearr;</a><a href="#">Poster &nearr;</a></div>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-number" aria-hidden="true">04</div>
+          <div>
+            <h3>AI-Based Network Threat Anomaly Detection</h3>
+            <p>A team project focused on developing an AI-based model for detecting abnormal signs in network security data.</p>
+            <ul class="tags" aria-label="Technologies"><li>AI Security</li><li>Network Security</li><li>Anomaly Detection</li></ul>
+            <div class="text-links"><a href="#">GitHub &nearr;</a></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="research" class="section" aria-labelledby="research-title">
+      <div class="section-heading"><p class="section-index">03</p><h2 id="research-title">Research / Publications</h2></div>
+      <div class="section-content publication-list">
+        <a href="#"><span><strong>Paper</strong> AI Agents in CLI Environments: Usefulness and Security Risks</span><span>View &nearr;</span></a>
+        <a href="#"><span><strong>Poster</strong> CISC-S Research Presentation</span><span>View &nearr;</span></a>
+        <a href="#"><span><strong>Report</strong> Real-Time Security Threat Detection System</span><span>View &nearr;</span></a>
+      </div>
+    </section>
+
+    <section id="skills" class="section" aria-labelledby="skills-title">
+      <div class="section-heading"><p class="section-index">04</p><h2 id="skills-title">Skills</h2></div>
+      <div class="section-content skills-grid">
+        <div><h3>Security</h3><p>Web Security &middot; WAF &middot; Log Analysis &middot; Threat Detection &middot; Authentication Protocols</p></div>
+        <div><h3>Backend / Infrastructure</h3><p>Spring Boot &middot; FastAPI &middot; Kafka &middot; MySQL &middot; Linux &middot; Docker</p></div>
+        <div><h3>AI / Data</h3><p>LightGBM &middot; Python &middot; Machine Learning</p></div>
+        <div><h3>Tools</h3><p>Git &middot; GitHub &middot; Wireshark &middot; Burp Suite &middot; ProVerif</p></div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact" aria-labelledby="contact-title">
+      <div class="section-heading"><p class="section-index">05</p><h2 id="contact-title">Contact</h2></div>
+      <div class="section-content">
+        <p>Interested in security engineering, research, or building dependable systems? Feel free to get in touch.</p>
+        <div class="text-links contact-links"><a href="#">GitHub &nearr;</a><a href="mailto:your-email@example.com">Email &nearr;</a><a href="#">LinkedIn &nearr;</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container footer"><p>&copy; 2026 KIM JINSEOB</p><a href="#top">Back to top &uarr;</a></footer>
 </body>
 </html>
